@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const products = [
   { id: 1, name: "Drumsticks(Leg piece)", price: "₹260/kg" , url:"./leg pice.webp", page:"/leg-piece" },
   { id: 2, name: "Curry Cut", price: "₹220/kg" , url:"./curry cut.jpg" , page:"/curry-cut"},
@@ -18,7 +20,7 @@ const Products = () => {
  
   <div className="max-w-7xl mx-auto grid sm:grid-cols-1 md:grid-cols-2 gap-12">
     {products.map((item) => (
-      <a href= {`${item.page}`}>
+      < Link to= {`${item.page}`}>
       <div
         key={item.id}
         className="group bg-white rounded-3xl shadow-lg overflow-hidden 
@@ -60,7 +62,8 @@ const Products = () => {
              Place Your Order
           </button> 
         </div>
-      </div></a>
+      </div>
+      </Link>
     ))}
   </div>
 </div>

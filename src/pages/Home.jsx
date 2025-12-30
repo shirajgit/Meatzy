@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
   const phone = "918105369922";
 
@@ -26,14 +28,13 @@ const Home = () => {
       100% Hygienic • Farm Fresh • Same-Day Delivery
     </p>
 
-    <a
-      href="/contact"
-      target="_blank"
+    < Link 
+    to='/contact'
       className="relative inline-flex items-center gap-2 bg-black text-white px-12 py-4 rounded-full text-lg font-semibold
                  hover:bg-gray-800 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
     >
       🛒 Place Your Order
-    </a>
+    </Link>
   </section>
 
   {/* FEATURES */}
