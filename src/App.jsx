@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+ 
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -12,7 +10,7 @@ import Products from "./pages/Product";
 import Contact from "./pages/Contact";
 
 import "./index.css";
-import About from './pages/about';
+import About from './pages/About';
 import Boneless from './sub-comp/Boneless';
 import Curry from './sub-comp/curry-cut';
 import Leg from './sub-comp/Leg-peice';
